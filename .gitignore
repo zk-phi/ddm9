@@ -1,0 +1,7 @@
+.DS_Store
+.pretty
+switch42.kicad_pcb-bak
+*.net
+*.bak
+gerber
+gerber.zip

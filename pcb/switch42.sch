@@ -1,0 +1,570 @@
+EESchema Schematic File Version 4
+LIBS:switch42-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L phi-kbd:ProMicro U1
+U 1 1 5C22C4C5
+P 2450 1950
+F 0 "U1" H 2450 2987 60  0000 C CNN
+F 1 "ProMicro" H 2450 2881 60  0000 C CNN
+F 2 "phi-kbd-library:ProMicro_Reversed_Conthrough-irreversible" H 2550 900 60  0001 C CNN
+F 3 "" H 2550 900 60  0000 C CNN
+	1    2450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5C22C6E4
+P 3450 2500
+F 0 "#PWR04" H 3450 2250 50  0001 C CNN
+F 1 "GND" H 3455 2327 50  0000 C CNN
+F 2 "" H 3450 2500 50  0001 C CNN
+F 3 "" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 5C22C772
+P 3550 1100
+F 0 "#PWR05" H 3550 950 50  0001 C CNN
+F 1 "VCC" H 3567 1273 50  0000 C CNN
+F 2 "" H 3550 1100 50  0001 C CNN
+F 3 "" H 3550 1100 50  0001 C CNN
+	1    3550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5C22C971
+P 4175 1300
+F 0 "SW1" H 4175 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 4175 1464 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 4175 1300 50  0001 C CNN
+F 3 "" H 4175 1300 50  0000 C CNN
+	1    4175 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5C22CA22
+P 4825 1300
+F 0 "SW4" H 4825 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 4825 1464 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 4825 1300 50  0001 C CNN
+F 3 "" H 4825 1300 50  0000 C CNN
+	1    4825 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5C22CA58
+P 4175 1650
+F 0 "SW2" H 4175 1905 50  0000 C CNN
+F 1 "SW_PUSH" H 4175 1814 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 4175 1650 50  0001 C CNN
+F 3 "" H 4175 1650 50  0000 C CNN
+	1    4175 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5C22CA92
+P 4825 1650
+F 0 "SW5" H 4825 1905 50  0000 C CNN
+F 1 "SW_PUSH" H 4825 1814 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 4825 1650 50  0001 C CNN
+F 3 "" H 4825 1650 50  0000 C CNN
+	1    4825 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 1000 14150 -350
+Wire Wire Line
+	14150 -350 14900 -350
+$Comp
+L power:GND #PWR01
+U 1 1 5C2AD0C2
+P 1450 2500
+F 0 "#PWR01" H 1450 2250 50  0001 C CNN
+F 1 "GND" H 1455 2327 50  0000 C CNN
+F 2 "" H 1450 2500 50  0001 C CNN
+F 3 "" H 1450 2500 50  0001 C CNN
+	1    1450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1500 1450 1500
+Wire Wire Line
+	1450 1500 1450 2500
+Text GLabel 1750 1600 0    50   Input ~ 0
+sw4
+Wire Wire Line
+	3450 1300 3450 2500
+Wire Wire Line
+	3150 1300 3450 1300
+Wire Wire Line
+	3550 1100 3550 1500
+Wire Wire Line
+	3150 1500 3550 1500
+Text GLabel 1750 2300 0    50   Input ~ 0
+sw3
+Text GLabel 1750 2200 0    50   Input ~ 0
+sw2
+Text GLabel 1750 1700 0    50   Input ~ 0
+sw1
+Wire Wire Line
+	1450 1500 1450 1400
+Wire Wire Line
+	1450 1400 1750 1400
+Connection ~ 1450 1500
+Text GLabel 1750 1200 0    50   Input ~ 0
+backlight
+$Comp
+L power:GND #PWR07
+U 1 1 5C36654D
+P 3975 2450
+F 0 "#PWR07" H 3975 2200 50  0001 C CNN
+F 1 "GND" H 3980 2277 50  0000 C CNN
+F 2 "" H 3975 2450 50  0001 C CNN
+F 3 "" H 3975 2450 50  0001 C CNN
+	1    3975 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5C36663F
+P 3975 2450
+F 0 "#FLG01" H 3975 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3975 2624 50  0000 C CNN
+F 2 "" H 3975 2450 50  0001 C CNN
+F 3 "~" H 3975 2450 50  0001 C CNN
+	1    3975 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5C367006
+P 4300 2450
+F 0 "#PWR08" H 4300 2300 50  0001 C CNN
+F 1 "VCC" H 4317 2623 50  0000 C CNN
+F 2 "" H 4300 2450 50  0001 C CNN
+F 3 "" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5C3670F8
+P 4300 2450
+F 0 "#FLG02" H 4300 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 2623 50  0000 C CNN
+F 2 "" H 4300 2450 50  0001 C CNN
+F 3 "~" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	1    0    0    1   
+$EndComp
+NoConn ~ 3150 1200
+Wire Wire Line
+	3975 950  4625 950 
+Text GLabel 4375 1300 2    50   Input ~ 0
+sw1
+Text GLabel 5025 1300 2    50   Input ~ 0
+sw2
+Text GLabel 4375 1650 2    50   Input ~ 0
+sw4
+Text GLabel 5025 1650 2    50   Input ~ 0
+sw5
+Wire Wire Line
+	3975 950  3975 1300
+Wire Wire Line
+	4625 950  4625 1300
+Wire Wire Line
+	3975 1300 3975 1650
+NoConn ~ 1750 1300
+Wire Wire Line
+	4625 1300 4625 1650
+Connection ~ 3975 1300
+Connection ~ 4625 1300
+$Comp
+L kbd:SK6812MINI L1
+U 1 1 5CC07D45
+P 1875 3400
+F 0 "L1" H 1875 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 1875 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 1875 3400 60  0001 C CNN
+F 3 "" H 1875 3400 60  0001 C CNN
+	1    1875 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L kbd:SK6812MINI L2
+U 1 1 5CC07D4C
+P 2375 3400
+F 0 "L2" H 2375 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 2375 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 2375 3400 60  0001 C CNN
+F 3 "" H 2375 3400 60  0001 C CNN
+	1    2375 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L kbd:SK6812MINI L3
+U 1 1 5CC07D53
+P 2875 3400
+F 0 "L3" H 2875 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 2875 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 2875 3400 60  0001 C CNN
+F 3 "" H 2875 3400 60  0001 C CNN
+	1    2875 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L kbd:SK6812MINI L4
+U 1 1 5CC07D5A
+P 3375 3400
+F 0 "L4" H 3375 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 3375 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 3375 3400 60  0001 C CNN
+F 3 "" H 3375 3400 60  0001 C CNN
+	1    3375 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2075 3500 2125 3500
+Wire Wire Line
+	2125 3500 2125 3300
+Wire Wire Line
+	2125 3300 2175 3300
+Wire Wire Line
+	2575 3500 2625 3500
+Wire Wire Line
+	2625 3500 2625 3300
+Wire Wire Line
+	2625 3300 2675 3300
+Wire Wire Line
+	3075 3500 3125 3500
+Wire Wire Line
+	3125 3500 3125 3300
+Wire Wire Line
+	3125 3300 3175 3300
+Wire Wire Line
+	2075 3300 2075 3050
+Wire Wire Line
+	2075 3050 2575 3050
+Wire Wire Line
+	2575 3050 2575 3300
+Wire Wire Line
+	2575 3050 3075 3050
+Wire Wire Line
+	3075 3050 3075 3300
+Connection ~ 2575 3050
+Wire Wire Line
+	1675 3500 1675 3600
+Wire Wire Line
+	1675 3600 2175 3600
+Wire Wire Line
+	2175 3600 2175 3500
+Wire Wire Line
+	2175 3600 2675 3600
+Wire Wire Line
+	2675 3600 2675 3500
+Connection ~ 2175 3600
+Wire Wire Line
+	2675 3600 3175 3600
+Connection ~ 2675 3600
+Text GLabel 1675 3300 0    50   Input ~ 0
+backlight
+$Comp
+L power:GND #PWR03
+U 1 1 5CC07D7E
+P 2075 3050
+F 0 "#PWR03" H 2075 2800 50  0001 C CNN
+F 1 "GND" V 2080 2922 50  0000 R CNN
+F 2 "" H 2075 3050 50  0001 C CNN
+F 3 "" H 2075 3050 50  0001 C CNN
+	1    2075 3050
+	0    1    1    0   
+$EndComp
+Connection ~ 2075 3050
+$Comp
+L power:VCC #PWR02
+U 1 1 5CC07D85
+P 1675 3600
+F 0 "#PWR02" H 1675 3450 50  0001 C CNN
+F 1 "VCC" V 1693 3727 50  0000 L CNN
+F 2 "" H 1675 3600 50  0001 C CNN
+F 3 "" H 1675 3600 50  0001 C CNN
+	1    1675 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1675 3600
+Connection ~ 3075 3050
+Wire Wire Line
+	3075 3050 3575 3050
+Wire Wire Line
+	3575 3300 3575 3050
+NoConn ~ 1750 1800
+$Comp
+L power:GND #PWR06
+U 1 1 5CC337C6
+P 3975 950
+F 0 "#PWR06" H 3975 700 50  0001 C CNN
+F 1 "GND" V 3980 822 50  0000 R CNN
+F 2 "" H 3975 950 50  0001 C CNN
+F 3 "" H 3975 950 50  0001 C CNN
+	1    3975 950 
+	0    1    1    0   
+$EndComp
+Connection ~ 3975 950 
+$Comp
+L kbd:SK6812MINI L5
+U 1 1 5F0E72E6
+P 3875 3400
+F 0 "L5" H 3875 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 3875 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 3875 3400 60  0001 C CNN
+F 3 "" H 3875 3400 60  0001 C CNN
+	1    3875 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3575 3500 3625 3500
+Wire Wire Line
+	3625 3500 3625 3300
+Wire Wire Line
+	3625 3300 3675 3300
+Wire Wire Line
+	3175 3600 3675 3600
+Wire Wire Line
+	3675 3600 3675 3500
+Wire Wire Line
+	4075 3300 4075 3050
+Connection ~ 3175 3600
+Wire Wire Line
+	3175 3500 3175 3600
+$Comp
+L kbd:SK6812MINI L6
+U 1 1 5F0E8EC0
+P 4375 3400
+F 0 "L6" H 4375 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 4375 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 4375 3400 60  0001 C CNN
+F 3 "" H 4375 3400 60  0001 C CNN
+	1    4375 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4075 3500 4125 3500
+Wire Wire Line
+	4125 3500 4125 3300
+Wire Wire Line
+	4125 3300 4175 3300
+Wire Wire Line
+	3675 3600 4175 3600
+Wire Wire Line
+	4175 3600 4175 3500
+Wire Wire Line
+	4575 3300 4575 3050
+Connection ~ 3675 3600
+$Comp
+L kbd:SK6812MINI L7
+U 1 1 5F0EA63C
+P 4875 3400
+F 0 "L7" H 4875 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 4875 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 4875 3400 60  0001 C CNN
+F 3 "" H 4875 3400 60  0001 C CNN
+	1    4875 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4575 3500 4625 3500
+Wire Wire Line
+	4625 3500 4625 3300
+Wire Wire Line
+	4625 3300 4675 3300
+Wire Wire Line
+	4175 3600 4675 3600
+Wire Wire Line
+	5075 3300 5075 3050
+$Comp
+L kbd:SK6812MINI L8
+U 1 1 5F0EA648
+P 5375 3400
+F 0 "L8" H 5375 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 5375 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 5375 3400 60  0001 C CNN
+F 3 "" H 5375 3400 60  0001 C CNN
+	1    5375 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5075 3500 5125 3500
+Wire Wire Line
+	5125 3500 5125 3300
+Wire Wire Line
+	5125 3300 5175 3300
+Wire Wire Line
+	4675 3600 5175 3600
+Wire Wire Line
+	5175 3600 5175 3500
+Wire Wire Line
+	5575 3300 5575 3050
+Connection ~ 4675 3600
+Wire Wire Line
+	4675 3500 4675 3600
+$Comp
+L kbd:SK6812MINI L9
+U 1 1 5F0EA657
+P 5875 3400
+F 0 "L9" H 5875 3138 51  0000 C CNN
+F 1 "SK6812MINI" H 5875 3203 16  0000 C CNN
+F 2 "phi-kbd-library:SK6812MINI-irreversible" H 5875 3400 60  0001 C CNN
+F 3 "" H 5875 3400 60  0001 C CNN
+	1    5875 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5575 3500 5625 3500
+Wire Wire Line
+	5625 3500 5625 3300
+Wire Wire Line
+	5625 3300 5675 3300
+Wire Wire Line
+	5175 3600 5675 3600
+Wire Wire Line
+	5675 3600 5675 3500
+Wire Wire Line
+	6075 3300 6075 3050
+Connection ~ 5175 3600
+Connection ~ 4175 3600
+Wire Wire Line
+	3575 3050 4075 3050
+Connection ~ 3575 3050
+Connection ~ 4075 3050
+Wire Wire Line
+	4075 3050 4575 3050
+Connection ~ 4575 3050
+Wire Wire Line
+	4575 3050 5075 3050
+Connection ~ 5075 3050
+Wire Wire Line
+	5075 3050 5575 3050
+Connection ~ 5575 3050
+Wire Wire Line
+	5575 3050 6075 3050
+NoConn ~ 6075 3500
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5F0EF661
+P 4175 2000
+F 0 "SW3" H 4175 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 4175 2164 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 4175 2000 50  0001 C CNN
+F 3 "" H 4175 2000 50  0000 C CNN
+	1    4175 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5F0EF668
+P 4825 2000
+F 0 "SW6" H 4825 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 4825 2164 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 4825 2000 50  0001 C CNN
+F 3 "" H 4825 2000 50  0000 C CNN
+	1    4825 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4375 2000 2    50   Input ~ 0
+sw7
+Text GLabel 5025 2000 2    50   Input ~ 0
+sw8
+Wire Wire Line
+	3975 1650 3975 2000
+Wire Wire Line
+	4625 1650 4625 2000
+Connection ~ 3975 1650
+Connection ~ 4625 1650
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5F0F22D3
+P 5475 1300
+F 0 "SW8" H 5475 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 5475 1464 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 5475 1300 50  0001 C CNN
+F 3 "" H 5475 1300 50  0000 C CNN
+	1    5475 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5F0F22DA
+P 5475 1650
+F 0 "SW9" H 5475 1905 50  0000 C CNN
+F 1 "SW_PUSH" H 5475 1814 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 5475 1650 50  0001 C CNN
+F 3 "" H 5475 1650 50  0000 C CNN
+	1    5475 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 950  5275 950 
+Text GLabel 5675 1300 2    50   Input ~ 0
+sw3
+Text GLabel 5675 1650 2    50   Input ~ 0
+sw6
+Wire Wire Line
+	5275 950  5275 1300
+Wire Wire Line
+	5275 1300 5275 1650
+Connection ~ 5275 1300
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5F0F22E7
+P 5475 2000
+F 0 "SW10" H 5475 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 5475 2164 50  0000 C CNN
+F 2 "phi-kbd-library:Choc_1.00u-narrow-irreversible" H 5475 2000 50  0001 C CNN
+F 3 "" H 5475 2000 50  0000 C CNN
+	1    5475 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5675 2000 2    50   Input ~ 0
+sw9
+Wire Wire Line
+	5275 1650 5275 2000
+Connection ~ 5275 1650
+Connection ~ 4625 950 
+Text GLabel 3150 2100 2    50   Input ~ 0
+sw5
+Text GLabel 3150 2200 2    50   Input ~ 0
+sw6
+Text GLabel 3150 1600 2    50   Input ~ 0
+sw7
+Text GLabel 3150 2000 2    50   Input ~ 0
+sw8
+Text GLabel 3150 2300 2    50   Input ~ 0
+sw9
+NoConn ~ 3150 1400
+NoConn ~ 1750 1900
+NoConn ~ 3150 1700
+NoConn ~ 3150 1800
+NoConn ~ 1750 2000
+NoConn ~ 1750 2100
+NoConn ~ 3150 1900
+$EndSCHEMATC
