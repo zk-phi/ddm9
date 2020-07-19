@@ -47,13 +47,17 @@
 
 QMK Firmware の環境構築をし、
 
-: git clone https://github.com/zk-phi/qmk_firmware
-: cd qmk_firmware
-: sh util/<your_OS>.sh
+```
+git clone https://github.com/zk-phi/qmk_firmware
+cd qmk_firmware
+sh util/<your_OS>.sh
+```
 
 Pro Micro を USB 接続した状態で以下のコマンドを実行
 
-: make handwired/ddm9:default:avrdude
+```
+make handwired/ddm9:default:avrdude
+```
 
 リセットしろと言われたら、 Pro Micro の RST ピンと GND ピンを、金属製のピンセットなど電気を通すものでショートさせてリセットします。
 
