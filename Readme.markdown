@@ -8,11 +8,11 @@
 
 表
 
-!(front)[imgs/front.png]
+![front](imgs/front.png)
 
 裏
 
-!(back)[imgs/back.png]
+![back](imgs/back.png)
 
 ## 組立
 ### 部品表
