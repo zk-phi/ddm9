@@ -27,21 +27,31 @@
 最低限必要なもの：
 
 - ハンダ
-  - LED を付ける場合は温度調整機能が必須 (FX-3000 がおすすめ)
+  - 鉛入り (鉛フリー以外) のものの方が溶けやすくて簡単です
+  - 鉛を取り込むと体に悪いので、作業後は机の清掃や手洗いをしてください
+
+- ハンダ小手
+  - そこまで高くないので、温度調整機能があるものを買った方が断然簡単です (FX-600 がおすすめ)
+  - 特に LED を付ける場合は熱で壊れてしまうので温度調整が必須です
+
 - ハンダ小手台
-- ハンダ小手 (LED をつけたい場合は温度調整機能のあるもの)
+  - アツアツのはんだごてが転がってくると熱いので、安定感のある (できれば専用の) 台が必要です
+
 - 小手先クリーナー (タワシみたいなやつでもスポンジみたいなやつでも ok)
 
 あったほうがよいもの：
 
 - ハンダ吸い取り線 または ハンダ吸い取り機
-- マルチテスター (安物で ok)
+  - 失敗した時のリカバリに必須です
+
+- マルチテスター
+  - ちゃんと繋がっているかどうかさえ判定できればいいので、怪しい安物で全然 ok です
 
 ## 部品表
 
 基板の他に：
 
-- コンスルー 付き Pro Micro x1
+- コンスルー付き Pro Micro x1
   - 遊舎工房さんで購入する場合
     - https://yushakobo.jp/shop/promicro-spring-pinheader/
   - TALP KEYBOARD さんで購入する場合
@@ -52,7 +62,10 @@
   - https://yushakobo.jp/shop/pg1350/
 
 - SK6812mini LED x9 (オプション)
-  - https://yushakobo.jp/shop/sk6812mini-35/
+  - 遊舎工房さんで購入する場合
+    - https://yushakobo.jp/shop/sk6812mini-35/
+  - 秋月電子さんで購入する場合
+    - http://akizukidenshi.com/catalog/g/gI-15477/
 
 - 完成した基板をいい感じに設置する手段
 
@@ -90,6 +103,8 @@ https://github.com/zk-phi/keyboard-buildguide-common/blob/master/conthrough.mark
 ### LED をつける (オプション)
 
 LED の半田付けは難しいので、自信がない場合はスキップ推奨です。
+
+また、熱で壊れてしまうので温度調整機能付きの半田ごてが必須です。
 
 https://github.com/zk-phi/keyboard-buildguide-common/blob/master/neopixel.markdown
 
